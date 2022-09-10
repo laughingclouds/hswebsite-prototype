@@ -37,7 +37,7 @@ function Column({ title = "", children, rows }) {
             </Anchor>
           );
         }
-        return <p className='w-96'>{rowName}</p>
+        return <p className='w-96' key={i}>{rowName}</p>
       })}
       {children}
     </div>
@@ -54,7 +54,7 @@ export default function Footer({ className = "" }) {
       </div>
 
       {FOOTER_LINKS.map((column, i) => {
-        return <Column title={column[0]} rows={column[1]} />;
+        return <Column title={column[0]} rows={column[1]} key={i} />;
       })}
 
     </footer>
