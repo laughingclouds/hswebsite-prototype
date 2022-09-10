@@ -1,14 +1,12 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import headerLogo from '../public/hsheader.png'
+import Anchor from './Anchor';
 
 function NavLink({ href, children }) {
   return (
-    <Link href={href} passHref>
-      <a className='link link-hover'>
-        {children}
-      </a>
-    </Link>
+    <Anchor href={href} className="link-hover">
+      {children}
+    </Anchor>
   );
 }
 
@@ -26,7 +24,7 @@ export default function Header() {
         <div className='flex-none'>
           <ul className='menu menu-horizontal p-0'>
             <li>
-              <a href='https://fest.hackoverflow.in/' target="_blank" className='link link-hover'>
+              <a href='https://fest.hackoverflow.in/' target="_blank" rel='noreferrer' className='link link-hover'>
                 Hack The Fest
               </a>
             </li>
