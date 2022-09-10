@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Anchor from "../components/Anchor";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
             <h3 className="mb-5">Hackoverflow Society</h3>
 
             <h5 className="mb-5">Autonomous Students' Society Recognized by Chandigarh University</h5>
-            <a href="/join-hs" className="btn btn-primary btn-wide">Join HS</a>
+            <Anchor href="/join-hs" className="btn btn-primary btn-wide" override>Join HS</Anchor>
           </div>
         </div>
       </div>
