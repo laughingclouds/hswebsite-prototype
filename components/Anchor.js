@@ -7,7 +7,7 @@ import Link from "next/link";
  * Add more classes using className prop
  */
 export default function Anchor({ href, children, className = "", override = false }) {
-  let classes = "link";
+  let classes = "link " + className;
 
   if (override) { 
     classes  = className;
