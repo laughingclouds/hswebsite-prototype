@@ -1,6 +1,8 @@
 import Image from 'next/image';
-import headerLogo from '../public/hsheader.png'
 import Anchor from './Anchor';
+import headerLogo from '../public/hsheader.png';
+import htsLogo32 from '../public/htslogo-32x32.png';
+
 
 function NavLink({ href, children, className = "" }) {
   const classes = "link-hover " + className;
@@ -49,7 +51,7 @@ export default function Header() {
         
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
-              <Image src={headerLogo} />
+              <Image src={htsLogo32} />
             </label>
             <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
               <li><NavLink href="">Item 1</NavLink></li>
